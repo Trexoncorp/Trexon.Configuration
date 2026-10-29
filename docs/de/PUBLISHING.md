@@ -6,7 +6,7 @@
 
 ## Aktueller Stand
 
-Vorbereitung der ersten Version `1.0.0`. Quellversion: `1.0.0-dev`. `v1.0.0` **erst nach gesonderter Anweisung des Eigentümers** erstellen und pushen. Workflow-Konfiguration und lokales Packen sind keine Veröffentlichung.
+Die erste stabile Version ist `1.0.0`. Die Arbeitsversion ist `1.0.0-dev`; der Release-Workflow übernimmt die Version aus dem Tag. `v1.0.0` **erst nach gesonderter Anweisung des Eigentümers** erstellen und pushen. Workflow-Konfiguration und lokales Packen sind keine Veröffentlichung.
 
 Wie bei Trexon.Logging gelten Tags `vMAJOR.MINOR.PATCH[-PRERELEASE]`, etwa `v1.0.0`. Die öffentliche API bleibt innerhalb von 1.x kompatibel; inkompatible Änderungen benötigen eine Major-Version.
 

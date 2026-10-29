@@ -6,7 +6,7 @@
 
 ## Current status
 
-Preparing the first `1.0.0` release. Source version: `1.0.0-dev`. Create and push `v1.0.0` **only after a separate owner instruction**. Workflow setup and local packing do not constitute publication.
+The first stable release is `1.0.0`. The source working version is `1.0.0-dev`; release workflows take the version from the tag. Create and push `v1.0.0` **only after a separate owner instruction**. Workflow setup and local packing do not constitute publication.
 
 This repository follows Trexon.Logging: `vMAJOR.MINOR.PATCH[-PRERELEASE]` tags, such as `v1.0.0`. Public API compatibility is maintained within 1.x; breaking changes require a major version.
 
