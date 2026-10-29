@@ -4,7 +4,7 @@
 
 [Inhalt](README.md)
 
-Die Bibliothek wird für `1.0.0` vorbereitet; die Veröffentlichung erfordert eine gesonderte Anweisung des Eigentümers.
+Dokumentation der öffentlichen API von Version `1.0.0`.
 
 | Aufgabe | Anleitung |
 | --- | --- |

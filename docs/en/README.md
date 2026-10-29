@@ -4,7 +4,7 @@
 
 [Contents](README.md)
 
-The library is being prepared for `1.0.0`; release requires a separate owner instruction.
+Documentation for public API version `1.0.0`.
 
 | Task | Guide |
 | --- | --- |

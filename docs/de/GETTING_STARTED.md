@@ -12,7 +12,7 @@ Von NuGet installieren:
 dotnet add package Trexon.Configuration --version 1.0.0
 ```
 
-Das Paket ist nach dem ersten Release verfügbar; der Status steht in der README.
+Version `1.0.0` ist die erste stabile Version.
 
 Modelle benötigen einen öffentlichen parameterlosen Konstruktor. Einstellungen sind öffentliche Eigenschaften mit `get; init;` oder `get; set;`. `init` verhindert spätere Änderungen durch Anwendungscode.
 

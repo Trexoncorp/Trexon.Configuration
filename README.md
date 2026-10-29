@@ -4,7 +4,7 @@
 
 Typed configuration for C# / .NET 8+: classes with defaults, automatic env loading, aliases, prefixes, dotenv, validation and independent managers. No external runtime NuGet dependencies. MIT licensed.
 
-**In development for the first `1.0.0` release. The `v1.0.0` tag and publication have not been performed.**
+**Version `1.0.0`** — the first stable release. Public API compatibility is maintained within 1.x.
 
 ## Start with one class
 
@@ -59,8 +59,6 @@ Install the package from NuGet:
 ```sh
 dotnet add package Trexon.Configuration --version 1.0.0
 ```
-
-The command becomes available after the first `1.0.0` release is published.
 
 ## Documentation
 

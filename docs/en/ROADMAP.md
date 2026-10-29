@@ -10,4 +10,4 @@ To keep the API simple, 1.0 excludes automatic reload, file watchers, mutation o
 
 To obtain new values, call `Settings.Load<T>` again or create another manager. Previously issued objects do not change. Changes in a parent shell do not update the environment of an already running process.
 
-Further features require an actual use case; no delivery dates are promised. The `v1.0.0` release awaits a separate owner instruction.
+Further features require an actual use case; no delivery dates are promised. The first stable release is `v1.0.0`.

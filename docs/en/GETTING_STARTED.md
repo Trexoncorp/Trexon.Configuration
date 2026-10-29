@@ -12,7 +12,7 @@ Install from NuGet:
 dotnet add package Trexon.Configuration --version 1.0.0
 ```
 
-The package becomes available after the first release; see the README for its status.
+Version `1.0.0` is the first stable release.
 
 Models need a public parameterless constructor. Settings are public properties with `get; init;` or `get; set;`. Prefer `init` to prevent application code from mutating loaded settings.
 

@@ -4,7 +4,7 @@
 
 Typisierte Konfiguration für C# / .NET 8+: Klassen mit Standardwerten, automatisches Laden von Umgebungsvariablen, Aliase, Präfixe, dotenv, Validierung und unabhängige Manager. Keine externen NuGet-Abhängigkeiten zur Laufzeit. MIT-Lizenz.
 
-**In Entwicklung für die erste Version `1.0.0`. Das Tag `v1.0.0` und die Veröffentlichung wurden noch nicht ausgeführt.**
+**Version `1.0.0`** — die erste stabile Version. Die öffentliche API bleibt innerhalb von 1.x kompatibel.
 
 ## Mit einer Klasse beginnen
 
@@ -59,8 +59,6 @@ Das Paket von NuGet installieren:
 ```sh
 dotnet add package Trexon.Configuration --version 1.0.0
 ```
-
-Der Befehl ist nach Veröffentlichung der ersten Version `1.0.0` verfügbar.
 
 ## Dokumentation
 

@@ -10,4 +10,4 @@ Für eine einfache API enthält 1.0 kein automatisches Reload, keine File Watche
 
 Für neue Werte `Settings.Load<T>` erneut aufrufen oder einen neuen Manager erstellen. Bereits ausgegebene Objekte bleiben unverändert. Änderungen in einer übergeordneten Shell aktualisieren nicht die Umgebung eines bereits laufenden Prozesses.
 
-Weitere Funktionen werden nach tatsächlichem Bedarf ergänzt; es gibt keine Terminzusagen. Der Release `v1.0.0` wartet auf eine gesonderte Anweisung des Eigentümers.
+Weitere Funktionen werden nach tatsächlichem Bedarf ergänzt; es gibt keine Terminzusagen. Die erste stabile Version ist `v1.0.0`.
