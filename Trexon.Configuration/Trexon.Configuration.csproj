@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Version>1.0.0-dev</Version>
+
+    <PackageId>Trexon.Configuration</PackageId>
+    <Title>Trexon.Configuration</Title>
+    <Authors>Trexoncorp</Authors>
+    <Description>Typed environment settings for .NET with defaults, aliases, prefixes, dotenv, validation and independent managers.</Description>
+    <PackageTags>configuration;settings;environment;dotenv;validation</PackageTags>
+    <PackageProjectUrl>https://github.com/Trexoncorp/Trexon.Configuration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Trexoncorp/Trexon.Configuration</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../README.ru.md" Pack="true" PackagePath="/" />
+    <None Include="../README.en.md" Pack="true" PackagePath="/" />
+    <None Include="../README.de.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+</Project>
