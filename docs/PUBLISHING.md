@@ -15,7 +15,7 @@
 1. Все файлы закоммичены в main и отправлены в origin; рабочая копия чистая.
 2. CI на актуальном main завершён успешно на Linux, Windows, macOS. Команды локальной проверки приведены в [разработке](DEVELOPMENT.md).
 3. Проверены примеры документации и содержимое NuGet-пакета, примеры не содержат настоящих секретов.
-4. На GitHub создан environment `nuget`, установлена repository variable `NUGET_USER` с именем профиля nuget.org.
+4. На GitHub создан environment `nuget`, при необходимости задана repository variable `NUGET_USER` (по умолчанию `anton_aleynichenko`).
 5. На nuget.org настроена Trusted Publishing policy: owner `Trexoncorp`, repository `Trexon.Configuration`, workflow file `publish.yml`, environment `nuget`. Для первого пакета проверьте доступность PackageId и права владельца. Конфигурация Logging не распространяется на новый репозиторий автоматически.
 
 Trusted Publishing использует OIDC и краткоживущий API key. Постоянный NuGet secret в workflow не нужен. Настройка учётной записи не подтверждается самим наличием YAML. См. [официальную инструкцию NuGet](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing).
@@ -35,3 +35,19 @@ git push origin v1.0.0
 `publish.yml` по push `v*` повторно проверяет тег, docs, build и тесты, собирает пакет с версией из тега и сохраняет nupkg/snupkg на 30 дней. Отдельный job в environment `nuget` получает OIDC key и отправляет пакет и symbols. При неверной настройке NUGET_USER или policy публикация завершится ошибкой; тег сам по себе не подтверждает успешный NuGet release.
 
 После запуска проверьте оба jobs, наличие версии `1.0.0` на nuget.org и установку в чистом тестовом приложении. После успеха обновите статус релиза в README на всех языках. GitHub Release с release notes — отдельная операция; текущий workflow его не создаёт.
+
+## Автоматическая публикация через Trusted Publishing
+
+Релизный workflow публикует проверенный nupkg и символы в NuGet через OIDC.
+Постоянный API key не нужен. Логин — repository variable `NUGET_USER` или
+`anton_aleynichenko` по умолчанию. Публикация использует environment `nuget`.
+
+В NuGet policy укажите owner репозитория `Trexoncorp`, имя этого репозитория,
+точное имя workflow и environment `nuget`; scope ограничьте соответствующим
+Package ID и публикацией новых версий существующего пакета.
+
+Для проверки настройки без загрузки пакета запустите workflow вручную на `main`:
+выполнится только обмен OIDC-токена. Публикация выполняется исключительно по тегу.
+Опубликованные теги не перемещайте; перед новым тегом обновите версию и документацию.
+
+Workflow: `publish.yml`. Тег: `vVERSION`; версия пакета берётся из тега.
